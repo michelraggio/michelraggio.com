@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michel Mustapha Raggio, CFA — Entrepreneur &amp; Startup Operator</title>
+    <meta name="description" content="Michel Mustapha Raggio, CFA is an entrepreneur and startup operator working across product, strategy, fundraising, and early-stage ventures.">
+    <meta name="author" content="Michel Mustapha Raggio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.michelraggio.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.michelraggio.com/">
+    <meta property="og:title" content="Michel Mustapha Raggio, CFA — Entrepreneur &amp; Startup Operator">
+    <meta property="og:description" content="Entrepreneur and startup operator working across product, strategy, fundraising, and early-stage ventures.">
+    <meta property="og:image" content="https://www.michelraggio.com/assets/images/michel-mustapha-raggio.png">
+    <meta property="og:image:alt" content="Portrait of Michel Mustapha Raggio">
+    <meta property="og:site_name" content="Michel Mustapha Raggio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Michel Mustapha Raggio, CFA — Entrepreneur &amp; Startup Operator">
+    <meta name="twitter:description" content="Entrepreneur and startup operator working across product, strategy, fundraising, and early-stage ventures.">
+    <meta name="twitter:image" content="https://www.michelraggio.com/assets/images/michel-mustapha-raggio.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Michel Mustapha Raggio, CFA",
+        "url": "https://www.michelraggio.com/",
+        "sameAs": ["https://www.linkedin.com/in/michelmustapharaggio/"]
+      }
+    </script>
+  </head>
+  <body>
+    <main class="profile">
+      <header class="introduction">
+        <div class="portrait-frame">
+          <img src="assets/images/michel-mustapha-raggio.png" alt="Portrait of Michel Mustapha Raggio" width="1600" height="1600">
+        </div>
+
+        <div class="intro-copy">
+          <p class="eyebrow">Entrepreneur &amp; startup operator</p>
+          <h1>Michel Mustapha Raggio, CFA</h1>
+          <p class="lead">I build products, companies, and momentum around ambitious ideas.</p>
+
+          <nav class="actions" aria-label="Connect with Michel">
+            <a class="icon-button" href="https://www.linkedin.com/in/michelmustapharaggio/" target="_blank" rel="noopener noreferrer" aria-label="Visit Michel Raggio's LinkedIn profile (opens in a new tab)">
+              <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M5.2 3.5A2.2 2.2 0 1 1 5.2 8a2.2 2.2 0 0 1 0-4.5ZM3.3 9.7h3.8V21H3.3V9.7Zm6.2 0h3.6v1.5h.1c.5-1 1.8-2 3.8-2 4.1 0 4.8 2.6 4.8 6.1V21h-3.7v-5c0-1.2 0-3-1.9-3s-2.2 1.4-2.2 2.9V21H9.5V9.7Z"/></svg>
+              <span class="visually-hidden">LinkedIn</span>
+            </a>
+            <button class="icon-button" type="button" id="copy-email" aria-label="Copy Michel's email address to clipboard">
+              <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 3.1-8 5-8-5V6l8 5 8-5v1.1Z"/></svg>
+              <span class="visually-hidden">Copy email address</span>
+            </button>
+            <a class="coffee-button" href="https://cal.com/michelraggio/coffeechat" target="_blank" rel="noopener noreferrer">Book a coffee chat <span aria-hidden="true">↗</span></a>
+          </nav>
+          <p class="copy-status" id="copy-status" aria-live="polite" role="status"></p>
+        </div>
+      </header>
+
+      <section class="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">A little about me</h2>
+        <div class="bio">
+          <p>I'm an entrepreneur and startup operator with a background spanning investment banking, corporate finance, product management, and early-stage ventures.</p>
+          <p>I started my career in investment banking before making the jump into startups – moving from Europe to Asia and from financial analysis to product management and entrepreneurship. Since then, I've founded and led early-stage companies, worked across product development, strategy, fundraising, and operations, and served as CFO of a hospitality startup.</p>
+          <p>I'm drawn to technology and the challenge of turning ideas into products and businesses.</p>
+          <p>I'd describe myself as tenacious and proactive. I like figuring things out, getting things moving, and tackling problems where there isn't an obvious playbook.</p>
+          <p>Always happy to connect with founders, investors, builders, and people working on interesting problems.</p>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const copyButton = document.querySelector('#copy-email');
+      const copyStatus = document.querySelector('#copy-status');
+      const email = 'michel@raggio.me';
+
+      copyButton.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(email);
+          copyStatus.textContent = 'Email copied';
+        } catch (error) {
+          copyStatus.textContent = 'Unable to copy email. Please try again.';
+        }
+      });
+    </script>
+  </body>
+</html>
