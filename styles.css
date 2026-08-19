@@ -71,14 +71,6 @@ h1 {
   line-height: 0.97;
 }
 
-.lead {
-  max-width: 33rem;
-  margin-bottom: 2rem;
-  color: var(--muted);
-  font-size: clamp(1.1rem, 1.8vw, 1.3rem);
-  line-height: 1.45;
-}
-
 .actions {
   display: flex;
   flex-wrap: wrap;
